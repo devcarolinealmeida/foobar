@@ -9,6 +9,7 @@ const addItem = (text) => {
 }
 
 start.addEventListener('click', () => {
+    list.classList.remove('hide');
     for (i = 1; i <= 100; i++) {
         if(i % 3 == 0 && i % 5 == 0) {
             addItem('foobar');

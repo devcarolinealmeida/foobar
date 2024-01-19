@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foobar</title>
-</head>
-<body>
-    <div class="container">
-        <ul id="list"></ul>
-        <button id="btn-start">Start</button>
-    </div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Foobar</h1>
+        <h4>
+          <span>Da 1 a 100</span>
+          <span>multiplo di 3 = Foo</span>
+          <span>multiplo di 5 = Bar</span>
+          <span>multiplo di 3 e 5 = FooBar</span>
+        </h4>
+        <div>
+            <button id="btn-start">Start</button>
+            <button onclick="location.reload()">Reset</button>
+        </div>
+        <ul id="list" class="hide"></ul>
+      </div>
+    </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
