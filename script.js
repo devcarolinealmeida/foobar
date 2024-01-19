@@ -2,34 +2,30 @@ const start = document.getElementById('btn-start');
 const list = document.getElementById('list');
 
 
-/* start.addEventListener('click', () => {
+const addItem = () => {
     item = document.createElement('li');
     list.appendChild(item);
-}) */
+}
 
 start.addEventListener('click', () => {
     for (i = 1; i <= 100; i++) {
         if(i % 3 == 0 && i % 5 == 0) {
-            item = document.createElement('li');
-            list.appendChild(item);
+            addItem();
             console.log('foobar');
             item.innerText = 'foobar';
         }
         else if (i % 3 == 0) {
-            item = document.createElement('li');
-            list.appendChild(item);
+            addItem();
             console.log('foo');
             item.innerText = 'foo';
         }
         else if (i % 5 == 0) {
-            item = document.createElement('li');
-            list.appendChild(item);
+            addItem();
             console.log('bar');
             item.innerText = 'bar';
         }
         else {
-            item = document.createElement('li');
-            list.appendChild(item);
+            addItem();
             console.log(i);
             item.innerText = i;
         }
