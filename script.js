@@ -2,15 +2,20 @@ const start = document.getElementById('btn-start');
 const list = document.getElementById('list');
 
 
+
+start.addEventListener('click', () => {
+    list.classList.remove('hide');
+    start.disabled = true;
+    calcMult();
+})
+
 const addItem = (text) => {
     item = document.createElement('li');
     list.appendChild(item);
     item.innerText = text;
 }
 
-start.addEventListener('click', () => {
-    list.classList.remove('hide');
-    start.disabled = true;
+const calcMult = () => {
     for (i = 1; i <= 100; i++) {
         if(i % 3 == 0 && i % 5 == 0) {
             addItem('Foobar');
@@ -29,4 +34,4 @@ start.addEventListener('click', () => {
             console.log(i);
         }
     }
-})
+}
