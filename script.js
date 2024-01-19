@@ -12,16 +12,16 @@ start.addEventListener('click', () => {
     list.classList.remove('hide');
     for (i = 1; i <= 100; i++) {
         if(i % 3 == 0 && i % 5 == 0) {
-            addItem('foobar');
-            console.log('foobar');
+            addItem('Foobar');
+            console.log('Foobar');
         }
         else if (i % 3 == 0) {
-            addItem('foo');
-            console.log('foo');
+            addItem('Foo');
+            console.log('Foo');
         }
         else if (i % 5 == 0) {
-            addItem('bar');
-            console.log('bar');
+            addItem('Bar');
+            console.log('Bar');
         }
         else {
             addItem(i);
