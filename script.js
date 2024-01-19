@@ -2,32 +2,29 @@ const start = document.getElementById('btn-start');
 const list = document.getElementById('list');
 
 
-const addItem = () => {
+const addItem = (text) => {
     item = document.createElement('li');
     list.appendChild(item);
+    item.innerText = text;
 }
 
 start.addEventListener('click', () => {
     for (i = 1; i <= 100; i++) {
         if(i % 3 == 0 && i % 5 == 0) {
-            addItem();
+            addItem('foobar');
             console.log('foobar');
-            item.innerText = 'foobar';
         }
         else if (i % 3 == 0) {
-            addItem();
+            addItem('foo');
             console.log('foo');
-            item.innerText = 'foo';
         }
         else if (i % 5 == 0) {
-            addItem();
+            addItem('bar');
             console.log('bar');
-            item.innerText = 'bar';
         }
         else {
-            addItem();
+            addItem(i);
             console.log(i);
-            item.innerText = i;
         }
     }
 })
